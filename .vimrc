@@ -56,6 +56,8 @@ let g:tagbar_width = 33
 
 let g:indent_guides_guide_size=1
 
+let g:ycm_python_binary_path = "/usr/local/bin/python3"
+
 " Set the python docstring window not to popup during completion
 autocmd FileType python setlocal completeopt-=preview
 
