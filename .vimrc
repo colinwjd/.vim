@@ -49,16 +49,16 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
-Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Yggdroot/indentLine'
 call vundle#end()
 
+"ctrlp设置
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.png,*.jpg,*.gif
+
 let g:tagbar_width = 33
 
-let g:indent_guides_guide_size=1
-
 let g:ycm_python_binary_path = "/usr/local/bin/python3"
-
 " Set the python docstring window not to popup during completion
 autocmd FileType python setlocal completeopt-=preview
 
@@ -73,11 +73,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
 let g:syntastic_python_python_exec = '/usr/local/bin/python3'
-
-"ctrlp设置
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.png,*.jpg,*.gif     " MacOSX/Linux
 
 if has("gui_running")
 	"set background=light
