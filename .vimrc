@@ -47,6 +47,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jiangmiao/auto-pairs' 
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 call vundle#end()
@@ -63,6 +64,20 @@ autocmd FileType python setlocal completeopt-=preview
 
 " Snippets trigger configuration. Do not use <tab> if you use YCM.
 let g:UltiSnipsExpandTrigger="<c-j>"
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_python_python_exec = '/usr/local/bin/python3'
+
+"ctrlp设置
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.png,*.jpg,*.gif     " MacOSX/Linux
 
 if has("gui_running")
 	"set background=light
