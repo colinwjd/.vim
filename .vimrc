@@ -37,16 +37,14 @@ filetype plugin indent on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-"Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jiangmiao/auto-pairs' 
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -64,9 +62,6 @@ let g:tagbar_width = 33
 let g:ycm_python_binary_path = "/usr/local/bin/python3"
 " Set the python docstring window not to popup during completion
 autocmd FileType python setlocal completeopt-=preview
-
-" Snippets trigger configuration. Do not use <tab> if you use YCM.
-let g:UltiSnipsExpandTrigger="<c-j>"
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
