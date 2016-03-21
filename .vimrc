@@ -57,7 +57,7 @@ let g:indent_guides_guide_size = 1
 
 "ctrlp设置
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.png,*.jpg,*.gif
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
 
 let g:tagbar_width = 33
 
