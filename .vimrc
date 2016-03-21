@@ -48,6 +48,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'vim-scripts/Mark--Karkat'
+Plugin 'hallison/vim-markdown'
 call vundle#end()
 
 let g:indent_guides_start_level = 2
