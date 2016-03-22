@@ -1,4 +1,3 @@
-syn on
 set laststatus=2
 set tabstop=4
 set softtabstop=4
@@ -32,6 +31,7 @@ set encoding=utf-8
 set fileencodings=utf-8,gbk
 set background=dark
 colorscheme solarized
+syn on
 syntax enable
 filetype plugin indent on
 
