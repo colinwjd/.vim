@@ -48,7 +48,6 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'hallison/vim-markdown'
 call vundle#end()
 
 let g:indent_guides_start_level = 2
