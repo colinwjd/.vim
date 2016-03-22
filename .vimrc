@@ -45,7 +45,6 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jiangmiao/auto-pairs' 
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'hallison/vim-markdown'
@@ -63,16 +62,6 @@ let g:tagbar_width = 33
 let g:ycm_python_binary_path = "/usr/local/bin/python3"
 " Set the python docstring window not to popup during completion
 autocmd FileType python setlocal completeopt-=preview
-
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_python_exec = '/usr/local/bin/python3'
 
 if has("gui_running")
 	"set background=light
