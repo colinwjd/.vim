@@ -7,6 +7,7 @@ set smarttab
 set number
 set ruler
 set ignorecase
+set smartcase
 set hls
 set foldmethod=syntax
 set bs=2
