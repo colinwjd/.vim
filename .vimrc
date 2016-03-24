@@ -7,9 +7,9 @@ set smarttab
 set number
 set ruler
 set ignorecase
-set smartcase
 set hls
 set foldmethod=syntax
+set foldlevel=100
 set bs=2
 set mouse=a
 set showmatch
@@ -17,16 +17,17 @@ set matchtime=1
 set cursorline
 set nocompatible
 set scrolloff=7
+set showcmd
 set cmdheight=1
 set nowrap
 set autoread
-set foldlevel=100
 set nobackup
 set noswapfile
 set autoindent
 "set cindent
 "set smartindent
-set showcmd
+set splitbelow
+set splitright
 set ttimeoutlen=50
 set encoding=utf-8
 set fileencodings=utf-8,gbk
@@ -35,6 +36,13 @@ colorscheme solarized
 syn on
 syntax enable
 filetype plugin indent on
+
+" key mappings
+let mapleader = ','
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -51,6 +59,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'tpope/vim-commentary'
 call vundle#end()
 
 " config for vim-indent-guides
