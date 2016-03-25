@@ -88,7 +88,7 @@ let g:airline_symbols.notexists = '∄'
 " config for YouCompleteMe
 let g:ycm_python_binary_path = "/usr/local/bin/python3"
 " set the python docstring window not to popup during completion
-"autocmd FileType python setlocal completeopt-=preview
+autocmd FileType python setlocal completeopt-=preview
 
 if has("gui_running")
     "set background=light
