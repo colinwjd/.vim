@@ -1,3 +1,7 @@
+filetype plugin indent on
+syntax enable
+syntax on
+
 set laststatus=2
 set tabstop=4
 set softtabstop=4
@@ -25,7 +29,6 @@ set autoread
 set nobackup
 set noswapfile
 set autoindent
-"set cindent
 "set smartindent
 set splitbelow
 set splitright
@@ -33,10 +36,6 @@ set ttimeoutlen=50
 set encoding=utf-8
 set fileencodings=utf-8,gbk
 set background=dark
-colorscheme solarized
-syn on
-syntax enable
-filetype plugin indent on
 
 " key mappings
 nnoremap <C-J> <C-W><C-J>
@@ -60,7 +59,11 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-commentary'
+Plugin 'altercation/vim-colors-solarized'
 call vundle#end()
+
+" config for vim-colors-solarized
+colorscheme solarized
 
 " config for vim-indent-guides
 let g:indent_guides_start_level = 2
